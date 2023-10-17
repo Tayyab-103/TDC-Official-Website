@@ -370,7 +370,7 @@ const ContractingModels = () => {
   return (
     <Box className={styles.contractingModelsMainBox}>
       <Box className={styles.CircleBox}>
-        <Image className={[styles.Circle]} src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112071/circle-shape_fszm1g.png"} width={250} height={250}></Image>
+        <Image className={[styles.Circle]} src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112071/circle-shape_fszm1g.png"} width={250} height={250} alt="image"></Image>
       </Box>
       <Box
         data-aos="fade-right"
