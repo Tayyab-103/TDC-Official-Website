@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1200px) {
+    .textfieldbox{
+        width: 340px ;
+    }
+    .heading2{
+        font-size: 28px !important;
+    }
+    .description{
+        width : 370px !important;
+        font-size: 8px !important;
+    }
+    .form{
+        width: 350px;
+    }
+    .mapbox{
+        width: 390px !important;
+    }
+}
+@media only screen and (max-width: 970px) {
+    
+    .textfieldbox{
+        width: 280px ;
+    }
+    .heading2{
+        font-size: 22px !important;
+        margin-top: 0px !important;
+    }
+    .description{
+        width : 270px !important;
+        font-size: 4px !important;
+    }
+    .form{
+        width: 280px;
+    }
+    .mapbox{
+        width: 350px !important;
+    }
+    .phone{
+        font-size: 10px !important;
+    }
+    .email{
+        font-size: 10px !important;
+    }
+    .contactbox{
+        gap: 8px !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+.mainbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+}
+.mapinner{
+    height: 200px;
+    width: 200px;
+}
+.mapouter{
+    height: 200px;
+    width: 200px;
+
+}
+}

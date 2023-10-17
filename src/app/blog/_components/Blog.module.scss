@@ -1,0 +1,21 @@
+
+.mainText{
+    width: 70%;
+    // margin-top: 110px;
+    
+}
+
+.container{ 
+      display: flex;
+     align-items: center;
+     min-height: 100vh;
+
+    }
+// .heroimage{ height: 680px; }
+@media only screen and (max-width: 1222px) {
+    .container{
+       display: flex;
+       flex-direction: column;
+       
+    }
+  }

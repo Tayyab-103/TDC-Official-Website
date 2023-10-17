@@ -1,0 +1,24 @@
+# Ignore Node.js modules
+node_modules/
+
+# Ignore build artifacts
+.next/
+out/
+
+# Ignore environment configuration files
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignore log files and generated files
+*.log
+*.tsbuildinfo
+
+# Ignore editor and IDE files
+.vscode/
+.idea/
+
+# Ignore custom files or directories (add more as needed)
+custom-file.js
+custom-directory/

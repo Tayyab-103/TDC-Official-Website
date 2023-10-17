@@ -1,0 +1,74 @@
+
+// Slider Component Styling
+.slider {
+    width: auto;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.image {
+    padding-top: 100px;
+    padding-right: 25px;
+    height: 140px;
+    width: auto;
+    margin-right: 15px;
+}
+ 
+// Contracting Models component Styling
+
+.contractingModelsMainBox {
+    z-index: 1;
+    padding: 80px 0px;
+    background: rgb(43, 89, 255, 1);
+    background-size: contain;
+    background-repeat: repeat;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.CircleBox {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+}
+
+
+.Circle {
+    width: 100% !important;
+    height: 100%;
+    top: -45px;
+    right: -40px;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+
+.container {
+    
+}
+
+.tabContainer {
+   
+}
+
+.h2 {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.detailedText {
+    color: #fff;
+    display: block;
+}
+
+.button {
+    text-align: center;
+}

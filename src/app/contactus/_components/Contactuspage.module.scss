@@ -1,0 +1,75 @@
+.mainBox{ background-color: #f3f4f6;padding-left:100px;}
+.rightmainpages {
+  background-color: #2b59ff;
+  border-radius: 15px;
+  height: 550px;
+  padding: 40px 15px 15px;
+  width: 68%;
+  height: auto;
+  margin-left: 120px;
+  
+}
+
+.listitm-backgrnd-none {
+  background-color: none;
+}
+
+.mainvist {
+  display: flex !important;
+  gap: 10px;
+}
+
+.leftvistbg {
+  background-color: #2627294D;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 40px;
+margin-left: 14PX;
+  .mainicon {
+    color: white !important;
+    padding: 14px;
+    .leftvistbg {
+      background-color: blue;
+    }
+  }
+}
+
+.mainvist :hover.leftvistbg {
+  background-color: #fff !important;
+  .mainicon {
+    color: #5034fc !important;
+  }
+}
+.checkboxBlock{display: flex; margin-top: 30px;}
+@media only screen and (max-width:935px) {
+   .rightmainpages {
+      width: 70%;
+      
+      
+    }
+    .checkboxBlock{display: block;}
+}
+
+@media only screen and (max-width: 900px) {
+  .mainemail {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .rightmainpages {
+   width: 100%;
+   height: auto;
+   margin-left: 0px;
+   margin-top: 0px;
+   margin-top: 30px;
+   
+ }
+ .mainBox{ padding-left: 0px;}
+}
+@media only screen and (max-width: 530px) {
+  .rightmainpages {
+    height: auto;
+    width: 100%;
+  }
+}

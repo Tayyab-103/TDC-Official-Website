@@ -1,0 +1,33 @@
+{
+  "name": "tdc-website",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.11",
+    "@mui/material": "^5.14.11",
+    "@mui/styles": "^5.14.11",
+    "aos": "^2.3.4",
+    "axios": "^1.5.1",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "font-awesome": "^4.7.0",
+    "next": "^13.5.4",
+    "react": "latest",
+    "react-countup": "^6.4.2",
+    "react-dom": "latest",
+    "react-fast-marquee": "^1.6.1",
+    "react-scroll-trigger": "^0.6.14",
+    "react-toastify": "^9.1.3",
+    "react-typed": "^1.2.0",
+    "sass": "^1.68.0"
+  }
+}

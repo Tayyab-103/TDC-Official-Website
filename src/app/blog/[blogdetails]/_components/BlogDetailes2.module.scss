@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+}
+
+.leftBox {
+  // border: 2px solid rgb(54, 11, 242);
+  transition: transform 0.2s;
+  padding-top: 430px;
+  padding-left: 5px;
+}
+
+.iconBox{
+  position: sticky;
+top: 400px;
+}
+
+.subIcons:hover {
+  color: blue;
+  transform: scale(1.2);
+}
+
+.centerBox {
+  width: 720px;
+  height: auto;
+  margin-bottom: 100px;
+  // border: 2px solid red;
+}
+.cbox1 {
+  padding-top: 70px;
+}
+
+.rightBox {
+  // border: 2px solid green;
+  margin-right: 180px;
+}
+.cardContainer {
+  padding-top: 70px;
+}
+
+.card1 {
+  // border: 2px solid red;
+  width: 310px;
+  height: 675px;
+  border-radius: 20px !important;
+}
+.image {
+  border-radius: 20px;
+}
+.cardBox1 {
+  position: absolute;
+}
+
+.cardBox2 {
+  position: absolute;
+  padding-top: 320px;
+  padding-left: 20px;
+}
+
+.subCardBox3 {
+  padding-top: 10px;
+}
+
+.subCardBox4 {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftBox {
+    padding-top: 17px;
+  }
+
+  .centerBox {
+    width: auto;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0px;
+  }
+  .iconBox {
+    display: flex;
+  }
+
+  .cbox1 {
+    padding-top: 30px;
+  }
+
+  .rightBox {
+    padding-left: 400px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .rightBox {
+    padding-left: 300px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .rightBox {
+    padding-left: 250px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .rightBox {
+    padding-left: 100px;
+  }
+}

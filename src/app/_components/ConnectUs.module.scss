@@ -1,0 +1,120 @@
+.mainCntent{
+
+  justify-content: center;
+  width: 40%;
+  margin: auto;
+
+}
+
+.wrkplce{  width: 100%;}
+
+.connectImg{
+width: 100%;
+ 
+}
+.cntimeg{ width: 80%; margin: auto;}
+.jhrtwn{ background-color: #2b59ff;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+padding: 10px 10px;
+max-width: 142px;
+height: 77px;
+border-radius: 5px;
+border: none;
+right: 32%;
+top: 40%;
+color: white;
+text-align: center;
+}
+  .vgibeach{ background-color: #2b59ff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 10px 10px;
+    max-width: 142px;
+    height: 77px;
+    border-radius: 5px;
+    border: none;
+    left: 21%;
+    top: 110px;
+  color: white;
+  text-align: center;
+  }
+.jhrtwn::before{
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 7px solid #2b59ff;
+}
+.vgibeach::before{
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 7px solid #2b59ff;
+}
+.footermap{ width: 70%;;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 75PX;}
+/*media quries strat*/
+@media only screen and (max-width: 1199px) {
+  .mainCntent {
+    width: 100%;
+  }
+  .footermap{width: 83%; }
+  .connectImg{
+    width: 100%;
+     
+    }
+    .vgibeach{ left: 16%;
+      top: 110px;}
+      .jhrtwn{right: 30%;
+        top: 40%; }
+ 
+}
+@media only screen and (max-width: 1030px) 
+{
+  .jhrtwn{right: 9%;top: 74%; }
+  .mainCntent {
+    width: 97%!important;
+  }
+}
+@media only screen and (max-width: 740px) 
+{
+  .jhrtwn{right: 9%;top: 74%; }
+  .vgibeach{ left: 18%;
+    top: 104px;}
+    
+    
+}
+@media only screen and (max-width: 438px) 
+{
+  .jhrtwn{width: 115px; }
+  .vgibeach{width: 115px!important;}
+  
+  
+  
+}
+@media only screen and (max-width: 370px) 
+{
+  .jhrtwn{right: 9%;top: 74%;}
+  .vgibeach{ left: 18%;
+    top: 74%; }
+    
+}
+

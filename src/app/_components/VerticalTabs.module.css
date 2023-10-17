@@ -1,0 +1,26 @@
+/* Media Query for Tablets */
+@media (max-width: 1024px) {
+  .root {
+    flex-direction: column; /* Stack tabs and content vertically for tablets */
+  }
+}
+
+/* Media Query for Large Phones */
+@media (max-width: 767px) {
+  .root {
+    flex-direction: column; /* Stack tabs and content vertically for large phones */
+  }
+  .tabs {
+    max-width: 100%; /* Make tabs take up full width on large phones */
+  }
+}
+
+/* Media Query for Small Phones */
+@media (max-width: 480px) {
+  .root {
+    flex-direction: column; /* Stack tabs and content vertically for small phones */
+  }
+  .tabs {
+    max-width: 100%; /* Make tabs take up full width on small phones */
+  }
+}
