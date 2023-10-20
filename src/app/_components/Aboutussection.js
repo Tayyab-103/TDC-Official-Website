@@ -16,11 +16,20 @@ const Aboutussection = () => {
     <Container>
       <Box
         className={styles.responsive}
-        sx={{ display: "flex", justifyContent: "space-around", gap: 18, pt: 8 }}
+        sx={{
+          display: "flex",
+          justifyContent: "space-around",
+          gap: 18,
+          pt: 8,
+        }}
       >
         <Box
           className={styles.walpaper}
-          sx={{ pt: 11, maxWidth: "100%", height: "auto" }}
+          sx={{
+            pt: 11,
+            maxWidth: "100%",
+            height: "auto",
+          }}
           data-aos="fade-right"
         >
           <Image
@@ -33,114 +42,144 @@ const Aboutussection = () => {
             layout="responsive"
           />
         </Box>
-        <Box
-          className={styles.maintextbox}
-          sx={{
-            width: "800px",
-            pt: 12,
-            fontFamily: "sans-serif",
-          }}
-        >
-          <Typography
-            className={styles.headers}
+        <Box className={styles.maintextbox}>
+          <Box
             sx={{
-              color: "blue",
-              fontWeight: 500,
-              fontSize: "17px",
-              lineHeight: "26px",
+              marginTop: "20px",
+              marginBottom: "20px",
             }}
-            data-aos="fade-up"
           >
-            Who Are We
-          </Typography>
-          <Typography
-            className={styles.headingbold}
-            sx={{ fontSize: "50px", fontWeight: 500, pt: 2 }}
-            data-aos="fade-up"
-            data-aos-duration="300"
-          >
-            Speed up development and innovation with us
-          </Typography>
-          <Typography
-            className={styles.grid}
-            sx={{ fontSize: "18px", lineHeight: 2, fontWeight: 400 }}
-            data-aos="fade-up"
-          >
-            Start-ups and SMEs enlist our services to execute software projects
-            or supplement their teams with business and technology leaders. We
-            assist them in designing and constructing data-oriented cloud-based
-            software solutions, from the conceptualization stage to the finished
-            product.
-          </Typography>
-          <Grid className={styles.numberingparts}>
-            <Box
-              className={styles.numbersof}
-              sx={{
-                display: "flex",
-                gap: 10,
-                pt: 4,
-                fontSize: "44px",
-                fontWeight: 600,
-              }}
-              data-aos="fade-up"
-            >
-              <ScrollTrigger
-                onEnter={() => setCounterOn(true)}
-                onExit={() => setCounterOn(false)}
-                delay={2000}
+            <Box>
+              <Typography
+                className={styles.headers}
+                sx={{
+                  color: "blue",
+                  fontWeight: 500,
+                  fontSize: "17px",
+                }}
+                data-aos="fade-up"
               >
-                <Box sx={{ display: "flex", gap: 5 }} data-aos="fade-up">
-                  <Box>
-                    {counterOn && (
-                      <CountUp start={0} end={50} duration={1} delay={0} />
-                    )}
-                    +
-                  </Box>
+                Who Are We
+              </Typography>
+              <Typography
+                className={styles.headingbold}
+                sx={{ fontSize: "50px", fontWeight: 500, pt: 2 }}
+                data-aos="fade-up"
+              >
+                Speed up development and innovation with us
+              </Typography>
+              <Typography
+                className={styles.grid}
+                sx={{ fontSize: "18px", fontWeight: 400 }}
+                data-aos="fade-up"
+              >
+                Start-ups and SMEs enlist our services to execute software
+                projects or supplement their teams with business and technology
+                leaders. We assist them in designing and constructing
+                data-oriented cloud-based software solutions, from the
+                conceptualization stage to the finished product.
+              </Typography>
+            </Box>
+            <Grid className={styles.numberingparts}>
+              <Box
+                className={styles.numbersof}
+                sx={{
+                  display: "flex",
+                  gap: 10,
+                  pt: 4,
+                  fontSize: "44px",
+                  fontWeight: 600,
+                }}
+                data-aos="fade-up"
+              >
+                <ScrollTrigger
+                  onEnter={() => setCounterOn(true)}
+                  onExit={() => setCounterOn(false)}
+                  delay={2000}
+                >
+                  <Box sx={{ display: "flex", gap: 5 }} data-aos="fade-up">
+                    <Box>
+                      {counterOn && (
+                        <CountUp start={0} end={50} duration={1} delay={0} />
+                      )}
+                      +
+                    </Box>
 
-                  <Divider orientation="vertical" flexItem />
-                  <Box>
-                    {counterOn && (
-                      <CountUp start={0} end={40} duration={1} delay={0} />
-                    )}
-                    +
+                    <Divider orientation="vertical" flexItem />
+                    <Box>
+                      {counterOn && (
+                        <CountUp start={0} end={40} duration={1} delay={0} />
+                      )}
+                      +
+                    </Box>
+                    <Divider orientation="vertical" flexItem />
+                    <Box sx={{ display: "flex" }}>
+                      {counterOn && (
+                        <CountUp start={0} end={20} duration={1} delay={0} />
+                      )}
+                      <Typography
+                        sx={{
+                          pt: "30px",
+                          fontWeight: "500",
+                          fontSize: { xs: "12px", md: "15px" },
+                        }}
+                      >
+                        Days
+                      </Typography>
+                    </Box>
                   </Box>
-                  <Divider orientation="vertical" flexItem />
-                  <Box sx={{ display: "flex" }}>
-                    {counterOn && (
-                      <CountUp start={0} end={20} duration={1} delay={0} />
-                    )}
-                    <Typography sx={{ pt: "30px", fontWeight: "500" }}>
-                      Days
-                    </Typography>
-                  </Box>
+                </ScrollTrigger>
+              </Box>
+              <Box
+                className={styles.numbersof2}
+                sx={{ display: "flex", gap: 5 }}
+                data-aos="fade-up"
+              >
+                <Box sx={{ display: "flex", gap: 1 }}>
+                  <Typography
+                    className={styles.fontAnimation}
+                    sx={{ fontSize: { xs: "12px", md: "15px" } }}
+                  >
+                    happy
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "#2B59FF",
+                      fontSize: { xs: "12px", md: "15px" },
+                    }}
+                  >
+                    clients
+                  </Typography>
                 </Box>
-              </ScrollTrigger>
-            </Box>
-            <Box
-              className={styles.numbersof2}
-              sx={{ display: "flex", gap: 5 }}
-              data-aos="fade-up"
-            >
-              <Box sx={{ display: "flex", gap: 1 }}>
-                <Typography sx={{ fontSize: "15px" }}>happy</Typography>
-                <Typography sx={{ color: "#2B59FF", fontSize: "15px" }}>
-                  clients
-                </Typography>
+                <Box sx={{ display: "flex", gap: 1 }}>
+                  <Typography sx={{ fontSize: { xs: "12px", md: "15px" } }}>
+                    IT
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "#2B59FF",
+                      fontSize: { xs: "12px", md: "15px" },
+                    }}
+                  >
+                    professionals
+                  </Typography>
+                </Box>
+                <Box sx={{ display: "flex", gap: 1 }}>
+                  <Typography sx={{ fontSize: { xs: "12px", md: "15px" } }}>
+                    to
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "#2B59FF",
+                      fontSize: { xs: "12px", md: "15px" },
+                    }}
+                  >
+                    launch a team
+                  </Typography>
+                </Box>
               </Box>
-              <Box sx={{ display: "flex", gap: 1 }}>
-                <Typography sx={{ fontSize: "15px" }}>IT</Typography>
-                <Typography sx={{ color: "#2B59FF", fontSize: "15px" }}>
-                  professionals
-                </Typography>
-              </Box>
-              <Box sx={{ display: "flex", gap: 1 }}>
-                <Typography sx={{ fontSize: "15px" }}>to</Typography>
-                <Typography sx={{ color: "#2B59FF", fontSize: "15px" }}>
-                  launch a team
-                </Typography>
-              </Box>
-            </Box>
-          </Grid>
+            </Grid>
+          </Box>
         </Box>
       </Box>
     </Container>
