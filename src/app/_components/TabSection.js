@@ -16,7 +16,6 @@ import {
 
 import Image from "next/image";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -156,10 +155,8 @@ export default function BasicTabs() {
             textAlign={"center"}
             mb={12.5}
             sx={{
-              textAlign: "center",
-
               justifyContent: "center",
-              // marginRight: { xs: '50px' },
+              marginRight: { xs: "50px" },
               color: "rgba(38, 39, 41, 0.7)",
               fontSize: { xs: "16px", md: "16px", lg: "16px" },
               width: { xs: "200px", md: "100%" },
@@ -167,25 +164,25 @@ export default function BasicTabs() {
               letterSpacing: "normal",
             }}
             data-aos="fade-up"
-            data-aos-duration="500"
           >
             Gain entry to the finest engineering professionals that you require.
             Our specialists will fully integrate themselves into your
             organization's culture, allowing you to expedite your project
-            without making any sacrifices.
+            without making any sacrifices.{" "}
           </Typography>
         </Box>
         <Container>
           <Grid container spacing={9} sx={{ justifyContent: "center" }}>
             <Grid item xs={12} md={6}>
               <Image
-                src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112129/IT-staff-augmentation_et6eq8.png"}
+                src={
+                  "https://res.cloudinary.com/dxzarochq/image/upload/v1697112129/IT-staff-augmentation_et6eq8.png"
+                }
                 alt="it staff augmentation"
                 width={554}
                 height={446}
                 layout="responsive"
                 data-aos="fade-up"
-                data-aos-duration="500"
               />
             </Grid>
 
@@ -194,7 +191,6 @@ export default function BasicTabs() {
               xs={12}
               md={6}
               data-aos="fade-up"
-              data-aos-duration="500"
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -217,13 +213,15 @@ export default function BasicTabs() {
                   }}
                 >
                   <Image
-                    src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112129/IT_Staff_Augmentation_logo_wltzne.png"}
+                    src={
+                      "https://res.cloudinary.com/dxzarochq/image/upload/v1697112129/IT_Staff_Augmentation_logo_wltzne.png"
+                    }
                     alt="it staff augmentation"
-                    width={38}
-                    height={38}
+                    width={34}
+                    height={34}
                   />
                 </Box>
-                <Box sx={{ width: "350px" }}>
+                <Box>
                   <Typography
                     variant="h4"
                     fontSize={21}
@@ -257,13 +255,15 @@ export default function BasicTabs() {
                   }}
                 >
                   <Image
-                    src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112077/Data_Engineering_Experts_logo_uqtdz7.png"}
+                    src={
+                      "https://res.cloudinary.com/dxzarochq/image/upload/v1697112077/Data_Engineering_Experts_logo_uqtdz7.png"
+                    }
                     alt="it staff augmentation"
                     width={34}
                     height={34}
                   />
                 </Box>
-                <Box sx={{ width: "350px" }}>
+                <Box>
                   <Typography
                     variant="h4"
                     fontSize={21}
@@ -278,12 +278,11 @@ export default function BasicTabs() {
                   >
                     Looking for Data engineers to augment in your team? We’ll
                     seamlessly join your next projects and deliver efficient &
-                    fast.{" "}
+                    fast.
                   </Typography>
                 </Box>
               </Box>
               <Box sx={{ display: "flex", marginTop: "30px" }}>
-                {" "}
                 <Box
                   sx={{
                     minWidth: "69px",
@@ -299,13 +298,15 @@ export default function BasicTabs() {
                   }}
                 >
                   <Image
-                    src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112057/Ai_and_ML_Specialists_logo_vmkkrb.png"}
+                    src={
+                      "https://res.cloudinary.com/dxzarochq/image/upload/v1697112057/Ai_and_ML_Specialists_logo_vmkkrb.png"
+                    }
                     alt="it staff augmentation"
                     width={34}
                     height={34}
                   />
                 </Box>
-                <Box sx={{ width: "350px" }}>
+                <Box>
                   <Typography
                     variant="h4"
                     fontSize={21}
@@ -320,7 +321,7 @@ export default function BasicTabs() {
                   >
                     Leverage the power of Artificial Intelligence and Machine
                     Learning with our team of experienced specialists, dedicated
-                    to delivering innovative...{" "}
+                    to delivering innovative...
                   </Typography>
                 </Box>
               </Box>
@@ -354,7 +355,9 @@ export default function BasicTabs() {
           <Grid container spacing={9} sx={{ justifyContent: "center" }}>
             <Grid item xs={12} md={6}>
               <Image
-                src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112156/tab2_my0iz3.png"}
+                src={
+                  "https://res.cloudinary.com/dxzarochq/image/upload/v1697112156/tab2_my0iz3.png"
+                }
                 alt="it staff augmentation"
                 width={554}
                 height={446}
@@ -399,7 +402,9 @@ export default function BasicTabs() {
                   }}
                 >
                   <Image
-                    src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112156/tab2icon1_gsr9ua.png"}
+                    src={
+                      "https://res.cloudinary.com/dxzarochq/image/upload/v1697112156/tab2icon1_gsr9ua.png"
+                    }
                     alt="it staff augmentation"
                     width={34}
                     height={34}
@@ -449,7 +454,9 @@ export default function BasicTabs() {
                   }}
                 >
                   <Image
-                    src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112156/tab2icon2_zptmfq.png"}
+                    src={
+                      "https://res.cloudinary.com/dxzarochq/image/upload/v1697112156/tab2icon2_zptmfq.png"
+                    }
                     alt="it staff augmentation"
                     width={34}
                     height={34}
@@ -490,7 +497,9 @@ export default function BasicTabs() {
                   }}
                 >
                   <Image
-                    src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112157/tab2icon3_p2l4as.png"}
+                    src={
+                      "https://res.cloudinary.com/dxzarochq/image/upload/v1697112157/tab2icon3_p2l4as.png"
+                    }
                     alt="it staff augmentation"
                     width={34}
                     height={34}
@@ -545,7 +554,9 @@ export default function BasicTabs() {
           <Grid container spacing={9} sx={{ justifyContent: "center" }}>
             <Grid item xs={12} md={6}>
               <Image
-                src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112159/tab3_ct2fj7.png"}
+                src={
+                  "https://res.cloudinary.com/dxzarochq/image/upload/v1697112159/tab3_ct2fj7.png"
+                }
                 alt="it staff augmentation"
                 width={554}
                 height={446}
@@ -582,7 +593,9 @@ export default function BasicTabs() {
                   }}
                 >
                   <Image
-                    src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112159/tab3icon1_onihvx.png"}
+                    src={
+                      "https://res.cloudinary.com/dxzarochq/image/upload/v1697112159/tab3icon1_onihvx.png"
+                    }
                     alt="it staff augmentation"
                     width={34}
                     height={34}
@@ -624,7 +637,9 @@ export default function BasicTabs() {
                   }}
                 >
                   <Image
-                    src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112160/tab3icon2_px35vg.png"}
+                    src={
+                      "https://res.cloudinary.com/dxzarochq/image/upload/v1697112160/tab3icon2_px35vg.png"
+                    }
                     alt="it staff augmentation"
                     width={34}
                     height={34}
@@ -675,7 +690,9 @@ export default function BasicTabs() {
                   }}
                 >
                   <Image
-                    src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112161/tab3icon3_k315jr.svg"}
+                    src={
+                      "https://res.cloudinary.com/dxzarochq/image/upload/v1697112161/tab3icon3_k315jr.svg"
+                    }
                     alt="it staff augmentation"
                     width={34}
                     height={34}
