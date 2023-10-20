@@ -18,20 +18,23 @@ const Aboutussection = () => {
         className={styles.responsive}
         sx={{ display: "flex", justifyContent: "space-around", gap: 18, pt: 8 }}
       >
-        <Box className ={styles.walpaper}
-         sx={{ pt: 11, maxWidth: "100%", height: "auto" }}
+        <Box
+          className={styles.walpaper}
+          sx={{ pt: 11, maxWidth: "100%", height: "auto" }}
           data-aos="fade-right"
-          data-aos-duration="300"
         >
           <Image
-            src={"https://res.cloudinary.com/dxzarochq/image/upload/v1697112170/aboutus_mzbw6e.png"}
+            src={
+              "https://res.cloudinary.com/dxzarochq/image/upload/v1697112170/aboutus_mzbw6e.png"
+            }
             width={550}
             height={580}
             alt="about-us.png"
             layout="responsive"
           />
         </Box>
-        <Box className={styles.maintextbox}
+        <Box
+          className={styles.maintextbox}
           sx={{
             width: "800px",
             pt: 12,
@@ -47,7 +50,6 @@ const Aboutussection = () => {
               lineHeight: "26px",
             }}
             data-aos="fade-up"
-            data-aos-duration="300"
           >
             Who Are We
           </Typography>
@@ -63,7 +65,6 @@ const Aboutussection = () => {
             className={styles.grid}
             sx={{ fontSize: "18px", lineHeight: 2, fontWeight: 400 }}
             data-aos="fade-up"
-            data-aos-duration="300"
           >
             Start-ups and SMEs enlist our services to execute software projects
             or supplement their teams with business and technology leaders. We
@@ -72,84 +73,77 @@ const Aboutussection = () => {
             product.
           </Typography>
           <Grid className={styles.numberingparts}>
-          <Box
-            className={styles.numbersof}
-            sx={{
-              display: "flex",
-              gap: 10,
-              pt: 4,
-              fontSize: "44px",
-              fontWeight: 600,
-            }}
-            data-aos="fade-up"
-            data-aos-duration="300"
-          >
-            <ScrollTrigger
-              onEnter={() => setCounterOn(true)}
-              onExit={() => setCounterOn(false)}
-              delay={2000}
+            <Box
+              className={styles.numbersof}
+              sx={{
+                display: "flex",
+                gap: 10,
+                pt: 4,
+                fontSize: "44px",
+                fontWeight: 600,
+              }}
+              data-aos="fade-up"
             >
-              <Box
-                sx={{ display: "flex", gap: 5 }}
-                data-aos="fade-up"
-                data-aos-duration="300"
+              <ScrollTrigger
+                onEnter={() => setCounterOn(true)}
+                onExit={() => setCounterOn(false)}
+                delay={2000}
               >
-                <Box>
-                  {counterOn && (
-                    <CountUp start={0} end={50} duration={1} delay={0} />
-                  )}
-                  +
-                </Box>
+                <Box sx={{ display: "flex", gap: 5 }} data-aos="fade-up">
+                  <Box>
+                    {counterOn && (
+                      <CountUp start={0} end={50} duration={1} delay={0} />
+                    )}
+                    +
+                  </Box>
 
-                <Divider orientation="vertical" flexItem />
-                <Box>
-                  {counterOn && (
-                    <CountUp start={0} end={40} duration={1} delay={0} />
-                  )}
-                  +
+                  <Divider orientation="vertical" flexItem />
+                  <Box>
+                    {counterOn && (
+                      <CountUp start={0} end={40} duration={1} delay={0} />
+                    )}
+                    +
+                  </Box>
+                  <Divider orientation="vertical" flexItem />
+                  <Box sx={{ display: "flex" }}>
+                    {counterOn && (
+                      <CountUp start={0} end={20} duration={1} delay={0} />
+                    )}
+                    <Typography sx={{ pt: "30px", fontWeight: "500" }}>
+                      Days
+                    </Typography>
+                  </Box>
                 </Box>
-                <Divider orientation="vertical" flexItem />
-                <Box sx={{ display: "flex" }}>
-                  {counterOn && (
-                    <CountUp start={0} end={20} duration={1} delay={0} />
-                  )}
-                  <Typography sx={{ pt: "30px", fontWeight: "500" }}>
-                    Days
-                  </Typography>
-                </Box>
+              </ScrollTrigger>
+            </Box>
+            <Box
+              className={styles.numbersof2}
+              sx={{ display: "flex", gap: 5 }}
+              data-aos="fade-up"
+            >
+              <Box sx={{ display: "flex", gap: 1 }}>
+                <Typography sx={{ fontSize: "15px" }}>happy</Typography>
+                <Typography sx={{ color: "#2B59FF", fontSize: "15px" }}>
+                  clients
+                </Typography>
               </Box>
-            </ScrollTrigger>
-          </Box>
-          <Box
-            className={styles.numbersof2}
-            sx={{ display: "flex", gap: 5 }}
-            data-aos="fade-up"
-            data-aos-duration="300"
-          >
-            <Box sx={{ display: "flex", gap: 1 }}>
-              <Typography sx={{ fontSize: "15px" }}>happy</Typography>
-              <Typography sx={{ color: "#2B59FF", fontSize: "15px" }}>
-                clients
-              </Typography>
+              <Box sx={{ display: "flex", gap: 1 }}>
+                <Typography sx={{ fontSize: "15px" }}>IT</Typography>
+                <Typography sx={{ color: "#2B59FF", fontSize: "15px" }}>
+                  professionals
+                </Typography>
+              </Box>
+              <Box sx={{ display: "flex", gap: 1 }}>
+                <Typography sx={{ fontSize: "15px" }}>to</Typography>
+                <Typography sx={{ color: "#2B59FF", fontSize: "15px" }}>
+                  launch a team
+                </Typography>
+              </Box>
             </Box>
-            <Box sx={{ display: "flex", gap: 1 }}>
-              <Typography sx={{ fontSize: "15px" }}>IT</Typography>
-              <Typography sx={{ color: "#2B59FF", fontSize: "15px" }}>
-                professionals
-              </Typography>
-            </Box>
-            <Box sx={{ display: "flex", gap: 1 }}>
-              <Typography sx={{ fontSize: "15px" }}>to</Typography>
-              <Typography sx={{ color: "#2B59FF", fontSize: "15px" }}>
-                launch a team
-              </Typography>
-            </Box>
-          </Box>
           </Grid>
         </Box>
       </Box>
     </Container>
-
   );
 };
 

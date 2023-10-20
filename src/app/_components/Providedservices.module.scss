@@ -1,103 +1,94 @@
 .header {
-    display: flex;
-    justify-content: center;
-    font-size: 48px;
-    padding-top: 20px;
-    font-weight: 500;
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  padding-top: 20px;
+  font-weight: 500;
 }
 
 .firstbox {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
 }
 
 .details {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: 1.86666;
-    color: rgba(38, 39, 41, 0.7);
-    padding-bottom: 22px;
-
-
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.86666;
+  color: rgba(38, 39, 41, 0.7);
+  padding-bottom: 22px;
 }
 
 @media only screen and (max-width: 1080px) {
-    .header {
-        font-size: 38px;
-        display: flex;
-        justify-content: center;
-    }
+  .header {
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+  }
 
-    .detail {
-        font-size: 10px !important;
-    }
+  .detail {
+    font-size: 10px !important;
+  }
 
-    .heading {
-        font-size: 16px !important;
+  .heading {
+    font-size: 16px !important;
+  }
 
-    }
+  .firstbox {
+    gap: 10px !important;
+  }
 
-    .firstbox {
-        gap: 10px !important;
-    }
-
-    .cards {
-        width: 240px !important;
-    }
-    .lastcard{
-        width: 240px !important;
-    }
-
+  .cards {
+    width: 240px !important;
+  }
+  .lastcard {
+    width: 240px !important;
+  }
 }
-
 
 @media only screen and (max-width: 800px) {
-    .firstbox {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .firstbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .cards {
-        width: 430px !important;
-    }
-    .lastcard{
-        margin-bottom: 60px;
-        width: 430px !important;
+  .cards {
+    width: auto !important;
+  }
+  .lastcard {
+    margin-bottom: 60px;
+    width: auto !important;
+  }
 
-    }
+  .detail {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 2.86666;
+    margin-bottom: 12px;
+    color: rgba(38, 39, 41, 0.7);
+  }
 
-    .detail {
-        font-size: 15px;
-        font-weight: 400;
-        letter-spacing: normal;
-        line-height: 2.86666;
-        margin-bottom: 12px;
-        color: rgba(38, 39, 41, 0.7);
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 32px !important;
+  }
 
-    }
+  .techstack {
+    padding-top: 50px !important;
+  }
 
-    .header {
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-        font-size: 32px !important;
-
-    }
-
-    .techstack {
-        padding-top: 50px !important;
-
-    }
-
-    .heading {
-        font-size: 21px !important;
-    }
-.firstbox{
+  .heading {
+    font-size: 21px !important;
+  }
+  .firstbox {
     padding-top: 30px !important;
-}
+  }
 }
